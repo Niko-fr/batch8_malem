@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@400;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+ box-sizing: border-box;   
+}
+body{
+    width: 100vw;
+    height: auto;
+    min-height: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    font-family: 'Bree Serif', serif;
+}
+p{
+    line-height: 2;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.app{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+}
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 104, 46);
+    background-color: rgb(221, 199, 29);
+}
+.brand{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+    user-select: none;
+}
+.note_form{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 110, 4);
+    gap: 20px;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    box-shadow: 4px 5px 8px  orangered;
+    transform: translateX(-250px);
+    transition-duration: .5s;
+}
+.btn_show{
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    height: 35px;
+    width: 110px;
+    border-radius: 0 20px 0 0;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 85%;
+    top: 14%;
+    text-transform: uppercase;
+}
+.btn_show:hover{
+    background-color: rgb(150, 9, 9);
+    transition-duration: .5s;
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form_group label{
+    text-transform: uppercase;
+}
+.form_group input{
+    font-family: inherit;
+    height: 35px;
+    border: .2px dotted goldenrod;
+    outline: none;
+    padding: 0 10px ;
+    font-size: 1rem;
+}
+.form_group textarea{
+    border: .2px dotted goldenrod;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+
+}
+#submit{
+    border: none;
+    outline: none;
+    height: 35px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}

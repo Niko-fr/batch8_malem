@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aplikasi note app" />
+    <meta name="og:tittle" content="Note App" />
+    <meta name="og:description" content="aplikasi note app" />
+    <meta name="og:image" content="website landing page Fadlan" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Note App</title>
+</head>
+<body>
+    <main id="app">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <h3 class="brand">my life diary</h3>
+        </nav>
+
+        <!-- END NAVBAR -->
+        
+        <!-- FORM INPUT -->
+       <form class="note_form" id="note_form">
+        <button class="btn_show" id="btn_show" type="button" onclick="showForm()">
+            note
+        </button>
+        <div class="form_group">
+            <label for="title">title</label>
+            <input type="text" id="title" required>
+
+        <div class="form_group">
+            <label for="body">body</label>
+            <textarea type="text" id="body" rows="5"></textarea>
+        </div>
+        <button id="submit" type="submit">add note</button>
+       </form>
+        
+        
+        <!-- END FORM INPUT -->
+
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
